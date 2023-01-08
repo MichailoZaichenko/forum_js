@@ -66,5 +66,14 @@
             <h3>Send</h3>
         </button>
     </section>
+    <script>
+        document.querySelector("#btn_1").addEventListener("click",  function () {
+            let name = name_input.value;
+            let massege = textMail.value;
+            let create_messege = document.createElement('li');
+            create_messege.innerHTML = "<b>"+'Name: '+ name+"</b>" + '<br>'+ massege;
+            forum.append(create_messege);
+        })
+        </script>
 </body>
 </html>
